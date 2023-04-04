@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array Search Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Array Search Form</h1>
+        <p>Generated Array: <span id="generatedArray"></span></p>
+        <form>
+            <label for="searchValue">Enter a value to search:</label>
+            <input type="text" id="searchValue" name="searchValue">
+            <br><br>
+            <input type="button" value="Linear Search" onclick="LinearSearchButton()">
+            <input type="button" value="Jump Search" onclick="JumpSearchButton()">
+        </form>
+        <div id="searchResult"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

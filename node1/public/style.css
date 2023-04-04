@@ -1,0 +1,44 @@
+.container {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+form {
+    margin: 2em auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type=text] {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5em;
+}
+
+input[type=button] {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #3E8E41;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
