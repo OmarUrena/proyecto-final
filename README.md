@@ -1,6 +1,6 @@
 # Project Name
 
-Brief project description.
+This project aims to create two webs applications that utilizes various search and sorting algorithms. The application is designed to run on a Kubernetes cluster, and it consists of two pods that each contain an HTML form and relevant algorithms.
 
 ## Table of Contents
 
