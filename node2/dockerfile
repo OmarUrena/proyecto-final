@@ -1,0 +1,25 @@
+FROM node:latest
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+COPY package.json ./
+
+RUN npm install
+
+# Bundle app source
+COPY . .
+
+EXPOSE 3002
+CMD [ "node", "app.js" ]
+
+
+# docker build -t nicolas/pod2 .
+# docker images
+# docker run -p 3002:3002 -d nicolas/pod1
+# docker ps
+# docker rm -f 'container id'
+
+# docker login
+# docker push nicolas/app2:latest
