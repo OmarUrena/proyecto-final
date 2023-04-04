@@ -17,7 +17,7 @@ CMD [ "node", "app.js" ]
 
 # docker build -t nicolas/pod2 .
 # docker images
-# docker run -p 3002:3002 -d nicolas/pod1
+# docker run -p 3002:3002 -d nicolas/pod2
 # docker ps
 # docker rm -f 'container id'
 
