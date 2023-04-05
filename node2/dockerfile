@@ -21,5 +21,6 @@ CMD [ "node", "app.js" ]
 # docker ps
 # docker rm -f 'container id'
 
-# docker login
-# docker push nicolas/app2:latest
+# docker tag nicolas/pod2:latest raydor/pod2
+# docker push raydor/pod2
+
