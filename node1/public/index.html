@@ -10,6 +10,7 @@
     <div class="container">
         <h1>Array Search Form</h1>
         <p>Generated Array: <span id="generatedArray"></span></p>
+        <!-- a label for an ip address and port number with a button to send the information to the js-->
         <form>
             <label for="searchValue">Enter a value to search:</label>
             <input type="text" id="searchValue" name="searchValue">
@@ -19,6 +20,17 @@
         </form>
         <div id="searchResult"></div>
     </div>
+
+    <form class="right">
+        <label for="ipAddress">Enter an IP Address:</label>
+        <input type="text" id="ipAddress" name="ipAddress">
+        <br><br>
+        <label for="portNumber">Enter a Port Number:</label>
+        <input type="text" id="portNumber" name="portNumber">
+        <br><br>
+        <input type="button" value="Submit" onclick="SetNetwork()">
+    </form>
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>

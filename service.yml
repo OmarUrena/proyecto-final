@@ -7,7 +7,13 @@ spec:
     app: nodeapp
   type: LoadBalancer
   ports:
-    - protocol: TCP
+    - name: nodeapp-pod1
+      protocol: TCP
       port: 3001
       targetPort: 3001
-      nodePort: 31110
+      nodePort: 31111
+    - name: nodeapp-pod2
+      port: 3002
+      targetPort: 3002
+      protocol: TCP
+      nodePort: 32222

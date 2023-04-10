@@ -65,6 +65,6 @@ app.post('/bubbleSearch', (req, res) => {
 });
 
 // Start the server
-app.listen(3002, () => console.log('Server started on port http://localhost:3002.'));
+app.listen(process.env.PORT || 3002, () => console.log('Server started.'));
 
 

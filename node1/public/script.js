@@ -2,9 +2,25 @@ let generatedArray = [];
 let searchValue = 0;
 let searchResultIndex = 0;
 let searchResult = '';
+let ip = 'localhost';
+let port = '3001';
+
+
+
+function SetNetwork() {
+    ip = document.getElementById('ipAddress').value;
+    port = document.getElementById('portNumber').value;
+    console.log(`ip: ${ip}`);
+    console.log(`port: ${port}`);
+
+    fetch(`http://${ip}:${port}/getNewArray`)
+        .then(response => response.json())
+        .then(data => document.getElementById('generatedArray').textContent = data)
+        .catch(err => console.log(err));
+}
 
 // Fetch API is used to make HTTP requests
-fetch('http://localhost:3001/getNewArray')
+fetch(`http://${ip}:${port}/getNewArray`)
     .then(response => response.json())
     .then(data => document.getElementById('generatedArray').textContent = data)
     .catch(err => console.log(err));
@@ -20,7 +36,7 @@ function LinearSearchButton() {
         'generatedArray': generatedArray
     }
 
-    fetch('http://localhost:3001/linearSearch', {
+    fetch(`http://${ip}:${port}/linearSearch`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -45,7 +61,7 @@ function JumpSearchButton() {
         'generatedArray': generatedArray
     }
 
-    fetch('http://localhost:3001/jumpSearch', {
+    fetch(`http://${ip}:${port}/jumpSearch`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

@@ -42,3 +42,9 @@ p {
     font-size: 1.2em;
     margin-bottom: 1em;
 }
+
+.right {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

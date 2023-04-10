@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nodeapp
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: nodeapp
@@ -19,6 +19,17 @@ spec:
           image: raydor/pod1:latest
           ports:
             - containerPort: 3001
+          resources:
+            limits:
+              cpu: 500m
+              memory: 512Mi
+            requests:
+              cpu: 250m
+              memory: 256Mi
+        - name: nodeapp-pod2
+          image: raydor/pod2:latest
+          ports:
+            - containerPort: 3002
           resources:
             limits:
               cpu: 500m
