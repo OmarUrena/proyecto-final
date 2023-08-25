@@ -1,51 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
 .container {
-    width: 50%;
-    margin: auto;
+    width: 60%;
+    margin: 50px auto;
     text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 2em;
-    margin-bottom: 1em;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 form {
-    margin: 2em auto;
+    margin: 30px auto;
+    max-width: 300px;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5em;
+    margin-bottom: 10px;
+    color: #444;
 }
 
 input[type=text] {
-    padding: 0.5em;
-    border-radius: 0.5em;
+    padding: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
-    margin-bottom: 0.5em;
+    margin-bottom: 15px;
+    width: 100%;
 }
 
 input[type=button] {
-    padding: 0.5em 1em;
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: #fff;
     border: none;
-    border-radius: 0.5em;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 input[type=button]:hover {
-    background-color: #3E8E41;
+    background-color: #45a049;
 }
 
 p {
     font-size: 1.2em;
-    margin-bottom: 1em;
+    margin-bottom: 20px;
+    color: #666;
 }
 
-
-.right {
-    position: absolute;
-    right: 20px;
+/* Posicionamiento del formulario de red */
+.network-form {
+    position: fixed;
     top: 20px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
 }

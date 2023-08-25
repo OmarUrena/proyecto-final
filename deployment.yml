@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: nodeapp-pod1
-          image: raydor/pod1:latest
+          image: omarurena/nodo1:latest
           ports:
             - containerPort: 3001
           resources:
@@ -27,7 +27,7 @@ spec:
               cpu: 250m
               memory: 256Mi
         - name: nodeapp-pod2
-          image: raydor/pod2:latest
+          image: omarurena/nodo2:latest
           ports:
             - containerPort: 3002
           resources:

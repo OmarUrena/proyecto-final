@@ -68,6 +68,6 @@ app.post('/jumpSearch', (req, res) => {
 });
 
 // Start the server
-app.listen(process.env.PORT || 3001, () => console.log('Server started.'));
+app.listen(process.env.PORT || 3003, () => console.log('Server started.'));
 
 
